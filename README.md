@@ -28,4 +28,11 @@ if constexpr  (has_member(member1, test))
 {
     std::cout << "It works!\n";
 }
+
+template<typename T>
+auto constrained() -> bool
+    requires(has_member(member1, T))
+{
+    return true;
+}
 ```
