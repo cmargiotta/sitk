@@ -24,7 +24,7 @@
               meson
               ninja
               gcc13
-              clang-tools_16
+              clang-tools_17
 
               (
                 mach-nix.lib."${system}".mkPython {
